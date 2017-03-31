@@ -1,0 +1,287 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Mar 28 10:05:34 2017
+# Process ID: 11420
+# Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13224 C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\CustomIP.xpr
+# Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/vivado.log
+# Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 830.965 ; gain = 173.863
+create_peripheral xilinx.com user led_ip 1.0 -dir C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/../ip_repo
+add_peripheral_interface S_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:led_ip:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design -force [ipx::find_open_core xilinx.com:user:led_ip:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:led_ip:1.0]
+set_property  ip_repo_paths  {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/../ip_repo/led_ip_1.0 C:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0} [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+ipx::edit_ip_in_project -upgrade true -name led_ip_v1_0_v1_0_project -directory C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.tmp/led_ip_v1_0_v1_0_project c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 858.512 ; gain = 8.297
+close [ open C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/led_user_logic.v w ]
+add_files C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/led_user_logic.v
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v" into library work [c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v:1]
+[Tue Mar 28 10:29:27 2017] Launched synth_1...
+Run output will be captured here: c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_v1_0_project/led_ip_v1_0_v1_0_project.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1256.129 ; gain = 312.266
+set_property taxonomy /Basic_Elements [ipx::current_core]
+ipx::merge_project_changes ports [ipx::current_core]
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 's_axi_aresetn' as interface 's_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 's_axi_aclk' as interface 's_axi_aclk'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axi_aresetn'.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v" into library work [c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v:1]
+[Tue Mar 28 10:58:48 2017] Launched synth_1...
+Run output will be captured here: c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_v1_0_project/led_ip_v1_0_v1_0_project.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1697.887 ; gain = 15.391
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v" into library work [c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v:1]
+[Tue Mar 28 11:00:27 2017] Launched synth_1...
+Run output will be captured here: c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_v1_0_project/led_ip_v1_0_v1_0_project.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1824.215 ; gain = 126.328
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'
+open_bd_design {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - btns_5bits
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - sws_8bits
+Adding cell -- xilinx.com:user:led_ip:1.0 - led_ip_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: Cortex_A9_led_ip_0_0 
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <Cortex_A9> from BD file <C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd>
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1824.215 ; gain = 0.000
+open_bd_design {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd}
+set_property name led_ip [get_bd_cells led_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins led_ip/S_AXI]
+</led_ip/S_AXI/S_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+startgroup
+create_bd_port -dir O -from 7 -to 0 LED
+connect_bd_net [get_bd_pins /led_ip/LED] [get_bd_ports LED]
+endgroup
+validate_bd_design
+make_wrapper -files [get_files C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd] -top
+INFO: [BD 41-1662] The design 'Cortex_A9.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9.v
+Verilog Output written to : C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9_wrapper.v
+Wrote  : <C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd> 
+file mkdir C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/constrs_1
+file mkdir C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/constrs_1/new
+close [ open C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/constrs_1/new/constraints_led.xdc w ]
+add_files -fileset constrs_1 C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/constrs_1/new/constraints_led.xdc
+reset_run Cortex_A9_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1662] The design 'Cortex_A9.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9.v
+Verilog Output written to : C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_5bits .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sws_8bits .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block led_ip .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hw_handoff/Cortex_A9.hwh
+Generated Block Design Tcl file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hw_handoff/Cortex_A9_bd.tcl
+Generated Hardware Definition File C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Cortex_A9_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 2.953 MB.
+[Tue Mar 28 11:16:30 2017] Launched Cortex_A9_xbar_0_synth_1, Cortex_A9_led_ip_0_0_synth_1, synth_1...
+Run output will be captured here:
+Cortex_A9_xbar_0_synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/Cortex_A9_xbar_0_synth_1/runme.log
+Cortex_A9_led_ip_0_0_synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/Cortex_A9_led_ip_0_0_synth_1/runme.log
+synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/synth_1/runme.log
+[Tue Mar 28 11:16:30 2017] Launched impl_1...
+Run output will be captured here: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1854.832 ; gain = 30.617
+ipx::edit_ip_in_project -upgrade true -name led_ip_v1_0_v1_0_project -directory C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.tmp/led_ip_v1_0_v1_0_project c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1854.832 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1854.832 ; gain = 0.000
+close_project
+ipx::edit_ip_in_project -upgrade true -name led_ip_v1_0_v1_0_project -directory C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.tmp/led_ip_v1_0_v1_0_project c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+add_files -norecurse -copy_to c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/src C:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_user_logic.v
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'
+reset_run Cortex_A9_led_ip_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9_wrapper.v" into library work [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9.v" into library work [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9.v:1]
+WARNING: [Project 1-576] IP 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.xci' in run Cortex_A9_led_ip_0_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.xci' in run Cortex_A9_led_ip_0_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Tue Mar 28 11:24:43 2017] Launched Cortex_A9_processing_system7_0_0_synth_1, Cortex_A9_led_ip_0_0_synth_1...
+Run output will be captured here:
+Cortex_A9_processing_system7_0_0_synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/Cortex_A9_processing_system7_0_0_synth_1/runme.log
+Cortex_A9_led_ip_0_0_synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/Cortex_A9_led_ip_0_0_synth_1/runme.log
+[Tue Mar 28 11:24:43 2017] Launched synth_1...
+Run output will be captured here: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/synth_1/runme.log
+reset_run Cortex_A9_processing_system7_0_0_synth_1
+ipx::edit_ip_in_project -upgrade true -name led_ip_v1_0_v1_0_project -directory C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.tmp/led_ip_v1_0_v1_0_project c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1854.832 ; gain = 0.000
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v" into library work [c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v" into library work [c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v:1]
+[Tue Mar 28 11:26:11 2017] Launched synth_1...
+Run output will be captured here: c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_v1_0_project/led_ip_v1_0_v1_0_project.runs/synth_1/runme.log
+add_files -norecurse -copy_to c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/src C:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_user_logic.v
+ERROR: [Vivado 12-3630] The destination file 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/src/led_user_logic.v' already exists, please use -force if you want to overwrite!
+add_files -norecurse -copy_to c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/src C:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_user_logic.v
+ERROR: [Vivado 12-3630] The destination file 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/src/led_user_logic.v' already exists, please use -force if you want to overwrite!
+set_property used_in_implementation true [get_files  c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v]
+add_files -norecurse -copy_to c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/src C:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_user_logic.v
+ERROR: [Vivado 12-3630] The destination file 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/src/led_user_logic.v' already exists, please use -force if you want to overwrite!
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v" into library work [c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v" into library work [c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v:1]
+[Tue Mar 28 11:28:31 2017] Launched synth_1...
+Run output will be captured here: c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_v1_0_project/led_ip_v1_0_v1_0_project.runs/synth_1/runme.log
+add_files -norecurse -copy_to c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/src C:/Users/kmd17/Documents/GitHub/led_user_logic.v
+ERROR: [Vivado 12-3630] The destination file 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/src/led_user_logic.v' already exists, please use -force if you want to overwrite!
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v" into library work [c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v" into library work [c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v:1]
+[Tue Mar 28 11:30:35 2017] Launched synth_1...
+Run output will be captured here: c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_v1_0_project/led_ip_v1_0_v1_0_project.runs/synth_1/runme.log
+close_project
+reset_run Cortex_A9_led_ip_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.xci' in run Cortex_A9_led_ip_0_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.xci' in run Cortex_A9_led_ip_0_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Tue Mar 28 11:31:05 2017] Launched Cortex_A9_processing_system7_0_0_synth_1, Cortex_A9_led_ip_0_0_synth_1...
+Run output will be captured here:
+Cortex_A9_processing_system7_0_0_synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/Cortex_A9_processing_system7_0_0_synth_1/runme.log
+Cortex_A9_led_ip_0_0_synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/Cortex_A9_led_ip_0_0_synth_1/runme.log
+[Tue Mar 28 11:31:05 2017] Launched synth_1...
+Run output will be captured here: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/synth_1/runme.log
+report_ip_status -name ip_status 
+import_files -norecurse C:/Users/kmd17/Documents/GitHub/led_user_logic.v
+remove_files  C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/imports/GitHub/led_user_logic.v
+file delete -force C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/imports/GitHub/led_user_logic.v
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 11:34:18 2017...

@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Mar 28 10:03:02 2017
+# Process ID: 10076
+# Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9672 C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\CustomIP.xpr
+# Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/vivado.log
+# Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'Cortex_A9.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+Cortex_A9_led_ip_0_0
+
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 825.141 ; gain = 170.648
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 10:05:04 2017...
