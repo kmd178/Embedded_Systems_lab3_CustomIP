@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Thu Mar 30 11:12:12 2017
+| Date         : Sun Apr 02 12:33:27 2017
 | Host         : SURFACE running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Cortex_A9_wrapper_methodology_drc_routed.rpt -rpx Cortex_A9_wrapper_methodology_drc_routed.rpx
 | Design       : Cortex_A9_wrapper
@@ -23,15 +23,21 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 21
+             Violations found: 22
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
+| TIMING-14 | Warning  | LUT on the clock tree         | 1          |
 | TIMING-18 | Warning  | Missing input or output delay | 21         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on btns_5bits_tri_i[0] relative to clock(s) clk_fpga_0 

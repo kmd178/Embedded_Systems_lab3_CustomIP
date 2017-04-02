@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-//Date        : Thu Mar 30 09:57:36 2017
+//Date        : Sun Apr 02 12:22:58 2017
 //Host        : SURFACE running 64-bit major release  (build 9200)
 //Command     : generate_target Cortex_A9.bd
 //Design      : Cortex_A9
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "Cortex_A9,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Cortex_A9,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Cortex_A9.hwdef" *) 
+(* CORE_GENERATION_INFO = "Cortex_A9,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Cortex_A9,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Cortex_A9.hwdef" *) 
 module Cortex_A9
    (DDR_addr,
     DDR_ba,
@@ -63,7 +63,7 @@ module Cortex_A9
   wire [7:0]axi_gpio_0_GPIO1_TRI_I;
   wire [4:0]axi_gpio_0_GPIO_TRI_I;
   wire btns_5bits_ip2intc_irpt;
-  wire [7:0]led_ip_0_LED;
+  wire [7:0]led_ip_LED;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -181,7 +181,7 @@ module Cortex_A9
   wire [0:0]rst_ps7_0_100M_interconnect_aresetn;
   wire [0:0]rst_ps7_0_100M_peripheral_aresetn;
 
-  assign LED[7:0] = led_ip_0_LED;
+  assign LED[7:0] = led_ip_LED;
   assign axi_gpio_0_GPIO1_TRI_I = sws_8bits_tri_i[7:0];
   assign axi_gpio_0_GPIO_TRI_I = btns_5bits_tri_i[4:0];
   Cortex_A9_axi_gpio_0_0 btns_5bits
@@ -206,8 +206,8 @@ module Cortex_A9
         .s_axi_wready(ps7_0_axi_periph_M00_AXI_WREADY),
         .s_axi_wstrb(ps7_0_axi_periph_M00_AXI_WSTRB),
         .s_axi_wvalid(ps7_0_axi_periph_M00_AXI_WVALID));
-  Cortex_A9_led_ip_0_1 led_ip
-       (.LED(led_ip_0_LED),
+  Cortex_A9_led_ip_0_0 led_ip
+       (.LED(led_ip_LED),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(ps7_0_axi_periph_M02_AXI_ARADDR[3:0]),
         .s_axi_aresetn(rst_ps7_0_100M_peripheral_aresetn),

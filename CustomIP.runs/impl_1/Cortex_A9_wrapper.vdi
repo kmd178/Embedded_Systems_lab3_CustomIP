@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Mar 30 11:10:34 2017
-# Process ID: 5752
+# Start of session at: Sun Apr 02 12:31:36 2017
+# Process ID: 7996
 # Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1
 # Command line: vivado.exe -log Cortex_A9_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Cortex_A9_wrapper.tcl -notrace
 # Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/Cortex_A9_wrapper.vdi
@@ -13,7 +13,7 @@ source Cortex_A9_wrapper.tcl -notrace
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_0/Cortex_A9_axi_gpio_0_0.dcp' for cell 'Cortex_A9_i/btns_5bits'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.dcp' for cell 'Cortex_A9_i/led_ip'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.dcp' for cell 'Cortex_A9_i/led_ip'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_processing_system7_0_0/Cortex_A9_processing_system7_0_0.dcp' for cell 'Cortex_A9_i/processing_system7_0'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_rst_ps7_0_100M_0/Cortex_A9_rst_ps7_0_100M_0.dcp' for cell 'Cortex_A9_i/rst_ps7_0_100M'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_1/Cortex_A9_axi_gpio_0_1.dcp' for cell 'Cortex_A9_i/sws_8bits'
@@ -24,19 +24,19 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2016.4
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bits/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:6204]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bits/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:6211]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bits/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:6218]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bits/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:6225]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bits/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:6232]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5151]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5158]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5165]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5172]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5179]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5186]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5193]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-5752-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5200]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bits/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:6204]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bits/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:6211]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bits/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:6218]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bits/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:6225]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bits/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:6232]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sws_8bits/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/.Xil/Vivado-7996-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:5200]
 Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_processing_system7_0_0/Cortex_A9_processing_system7_0_0.xdc] for cell 'Cortex_A9_i/processing_system7_0/inst'
 Finished Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_processing_system7_0_0/Cortex_A9_processing_system7_0_0.xdc] for cell 'Cortex_A9_i/processing_system7_0/inst'
 Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_0/Cortex_A9_axi_gpio_0_0_board.xdc] for cell 'Cortex_A9_i/btns_5bits/U0'
@@ -63,7 +63,7 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 547.523 ; gain = 300.586
+link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 547.059 ; gain = 300.941
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -74,61 +74,61 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.797 . Memory (MB): peak = 557.125 ; gain = 9.602
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 557.215 ; gain = 10.156
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
-Implement Debug Cores | Checksum: 5801e8a5
+Implement Debug Cores | Checksum: 10ceed633
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 109be0147
+Phase 1 Retarget | Checksum: 1d432d092
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.344 . Memory (MB): peak = 1047.254 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1045.684 ; gain = 0.000
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-10] Eliminated 51 cells.
-Phase 2 Constant propagation | Checksum: 185e8696c
+INFO: [Opt 31-10] Eliminated 120 cells.
+Phase 2 Constant propagation | Checksum: 12f1f61cd
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1047.254 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1045.684 ; gain = 0.000
 
 Phase 3 Sweep
-INFO: [Opt 31-12] Eliminated 138 unconnected nets.
+INFO: [Opt 31-12] Eliminated 184 unconnected nets.
 INFO: [Opt 31-11] Eliminated 192 unconnected cells.
-Phase 3 Sweep | Checksum: 1480d225d
+Phase 3 Sweep | Checksum: 17a1728b9
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1047.254 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1045.684 ; gain = 0.000
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-12] Eliminated 0 unconnected nets.
 INFO: [Opt 31-11] Eliminated 0 unconnected cells.
-Phase 4 BUFG optimization | Checksum: a431d897
+Phase 4 BUFG optimization | Checksum: 10e113678
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1047.254 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1045.684 ; gain = 0.000
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1047.254 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: a431d897
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1045.684 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 10e113678
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1047.254 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1045.684 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: a431d897
+Ending Power Optimization Task | Checksum: 10e113678
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1047.254 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1045.684 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 35 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1047.254 ; gain = 499.730
+opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1045.684 ; gain = 498.625
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 1047.254 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1045.684 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/Cortex_A9_wrapper_opt.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/Cortex_A9_wrapper_drc_opted.rpt.
@@ -150,77 +150,83 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1047.254 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1047.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1045.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1045.684 ; gain = 0.000
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-568] A LUT 'Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2' is driving clock pin of 9 registers. This could lead to large hold time violations. First few involved registers are:
+	Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[7] {FDCE}
+	Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[2] {FDCE}
+	Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[1] {FDCE}
+	Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[0] {FDCE}
+	Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[8] {FDPE}
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 19db87284
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1c097cda2
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 1.2 Build Placer Netlist Model
-Phase 1.2 Build Placer Netlist Model | Checksum: 29339e40b
+Phase 1.2 Build Placer Netlist Model | Checksum: 1cf5fd552
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 1.3 Constrain Clocks/Macros
-Phase 1.3 Constrain Clocks/Macros | Checksum: 29339e40b
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1cf5fd552
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1075.324 ; gain = 28.070
-Phase 1 Placer Initialization | Checksum: 29339e40b
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1071.922 ; gain = 26.238
+Phase 1 Placer Initialization | Checksum: 1cf5fd552
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 21a5f1d80
+Phase 2 Global Placement | Checksum: 186d26061
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 21a5f1d80
+Phase 3.1 Commit Multi Column Macros | Checksum: 186d26061
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2627b28b2
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1e3053f32
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 282d795fa
+Phase 3.3 Area Swap Optimization | Checksum: 20fcc37a2
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 282d795fa
+Phase 3.4 Pipeline Register Optimization | Checksum: 20fcc37a2
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 258c6e86b
+Phase 3.5 Timing Path Optimizer | Checksum: 1cd44b662
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 19ab4d952
+Phase 3.6 Small Shape Detail Placement | Checksum: a6254048
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 18cc44632
+Phase 3.7 Re-assign LUT pins | Checksum: e8e52022
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 18cc44632
+Phase 3.8 Pipeline Register Optimization | Checksum: e8e52022
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1075.324 ; gain = 28.070
-Phase 3 Detail Placement | Checksum: 18cc44632
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1071.922 ; gain = 26.238
+Phase 3 Detail Placement | Checksum: e8e52022
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -228,47 +234,47 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=3.629. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 156db5cea
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.574. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 95a778f7
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1075.324 ; gain = 28.070
-Phase 4.1 Post Commit Optimization | Checksum: 156db5cea
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.922 ; gain = 26.238
+Phase 4.1 Post Commit Optimization | Checksum: 95a778f7
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 156db5cea
+Phase 4.2 Post Placement Cleanup | Checksum: 95a778f7
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 156db5cea
+Phase 4.3 Placer Reporting | Checksum: 95a778f7
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.922 ; gain = 26.238
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 20cad2867
+Phase 4.4 Final Placement Cleanup | Checksum: 16dbafbbe
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1075.324 ; gain = 28.070
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 20cad2867
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.922 ; gain = 26.238
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 16dbafbbe
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1075.324 ; gain = 28.070
-Ending Placer Task | Checksum: 11ac98c23
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.922 ; gain = 26.238
+Ending Placer Task | Checksum: 1549a7ca7
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1075.324 ; gain = 28.070
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.922 ; gain = 26.238
 INFO: [Common 17-83] Releasing license: Implementation
-51 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+51 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1075.324 ; gain = 28.070
+place_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1071.922 ; gain = 26.238
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.359 . Memory (MB): peak = 1075.324 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.391 . Memory (MB): peak = 1071.922 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/Cortex_A9_wrapper_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.297 . Memory (MB): peak = 1075.324 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1075.324 ; gain = 0.000
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1075.324 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1071.922 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1071.922 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1071.922 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -280,123 +286,123 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 385a5957 ConstDB: 0 ShapeSum: e26f32cc RouteDB: 0
+Checksum: PlaceDB: 55a5fa5f ConstDB: 0 ShapeSum: fef48248 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: e267b424
+Phase 1 Build RT Design | Checksum: 178243c2c
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:34 . Memory (MB): peak = 1213.328 ; gain = 138.004
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:47 . Memory (MB): peak = 1203.965 ; gain = 132.043
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: e267b424
+Phase 2.1 Create Timer | Checksum: 178243c2c
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:34 . Memory (MB): peak = 1213.328 ; gain = 138.004
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:47 . Memory (MB): peak = 1203.965 ; gain = 132.043
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: e267b424
+Phase 2.2 Fix Topology Constraints | Checksum: 178243c2c
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:34 . Memory (MB): peak = 1213.328 ; gain = 138.004
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:47 . Memory (MB): peak = 1203.965 ; gain = 132.043
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: e267b424
+Phase 2.3 Pre Route Cleanup | Checksum: 178243c2c
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:34 . Memory (MB): peak = 1213.328 ; gain = 138.004
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:47 . Memory (MB): peak = 1203.965 ; gain = 132.043
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: e1c9702d
+Phase 2.4 Update Timing | Checksum: 119bb56dc
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:36 . Memory (MB): peak = 1219.434 ; gain = 144.109
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.560  | TNS=0.000  | WHS=-0.188 | THS=-22.396|
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:48 . Memory (MB): peak = 1210.023 ; gain = 138.102
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.524  | TNS=0.000  | WHS=-0.447 | THS=-22.843|
 
-Phase 2 Router Initialization | Checksum: 168e16753
+Phase 2 Router Initialization | Checksum: 19d9af741
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:49 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 13de280cb
+Phase 3 Initial Routing | Checksum: 192769fbc
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:49 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 147
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 122
+ Number of Nodes with overlaps = 3
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 81f941aa
+Phase 4.1.1 Update Timing | Checksum: 1868b0d4c
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.652  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:49 . Memory (MB): peak = 1210.023 ; gain = 138.102
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.870  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 2806cf270
+Phase 4.1 Global Iteration 0 | Checksum: 1df457ba4
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Phase 4.2 Global Iteration 1
  Number of Nodes with overlaps = 0
 
 Phase 4.2.1 Update Timing
-Phase 4.2.1 Update Timing | Checksum: 1216a7186
+Phase 4.2.1 Update Timing | Checksum: 8b0089a3
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.652  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.870  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1ae6012b7
+Phase 4.2 Global Iteration 1 | Checksum: 27f442759
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
-Phase 4 Rip-up And Reroute | Checksum: 1ae6012b7
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
+Phase 4 Rip-up And Reroute | Checksum: 27f442759
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1d6879e61
+Phase 5.1.1 Update Timing | Checksum: 1b8fa4b69
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.802  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.884  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 1d6879e61
+Phase 5.1 Delay CleanUp | Checksum: 1b8fa4b69
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1d6879e61
+Phase 5.2 Clock Skew Optimization | Checksum: 1b8fa4b69
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
-Phase 5 Delay and Skew Optimization | Checksum: 1d6879e61
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
+Phase 5 Delay and Skew Optimization | Checksum: 1b8fa4b69
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 12ebd3c05
+Phase 6.1.1 Update Timing | Checksum: 2704078ce
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.802  | TNS=0.000  | WHS=0.053  | THS=0.000  |
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.884  | TNS=0.000  | WHS=0.041  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1797bdc42
+Phase 6.1 Hold Fix Iter | Checksum: 254c0cd50
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
-Phase 6 Post Hold Fix | Checksum: 1797bdc42
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
+Phase 6 Post Hold Fix | Checksum: 254c0cd50
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.261209 %
-  Global Horizontal Routing Utilization  = 0.34787 %
+  Global Vertical Routing Utilization    = 0.214197 %
+  Global Horizontal Routing Utilization  = 0.300287 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -405,43 +411,43 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 1eb3118cb
+Phase 7 Route finalize | Checksum: 218404cf9
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:38 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1eb3118cb
+Phase 8 Verifying routed nets | Checksum: 218404cf9
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:38 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1fdb8ab01
+Phase 9 Depositing Routes | Checksum: 15867c556
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:38 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=3.802  | TNS=0.000  | WHS=0.053  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=3.884  | TNS=0.000  | WHS=0.041  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 1fdb8ab01
+Phase 10 Post Router Timing | Checksum: 15867c556
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:38 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:38 . Memory (MB): peak = 1219.434 ; gain = 144.109
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.023 ; gain = 138.102
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-66 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+66 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:40 . Memory (MB): peak = 1219.434 ; gain = 144.109
+route_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:52 . Memory (MB): peak = 1210.023 ; gain = 138.102
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.437 . Memory (MB): peak = 1219.434 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.500 . Memory (MB): peak = 1210.023 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/Cortex_A9_wrapper_routed.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/Cortex_A9_wrapper_drc_routed.rpt.
@@ -456,14 +462,22 @@ Command: report_power -file Cortex_A9_wrapper_power_routed.rpt -pb Cortex_A9_wra
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-76 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+76 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 Command: write_bitstream -force -no_partial_bitfile Cortex_A9_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 Running DRC as a precondition to command write_bitstream
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado 12-3199] DRC finished with 0 Errors
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2_n_0 is a gated clock net sourced by a combinational pin Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2/O, cell Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2 is driving clock pin of 9 cells. This could lead to large hold time violations. First few involved cells are:
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[7] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[2] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[1] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[0] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[8] {FDPE}
+
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 Loading data files...
 Loading site data...
@@ -474,9 +488,9 @@ Creating bitstream...
 Writing bitstream ./Cortex_A9_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Mar 30 11:12:43 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun Apr 02 12:33:58 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-84 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+84 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1586.207 ; gain = 356.020
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 11:12:44 2017...
+write_bitstream: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1566.961 ; gain = 343.027
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 02 12:33:58 2017...

@@ -17,7 +17,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
 set_property ip_repo_paths {
-  c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0
+  c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/GRAY_ACCELERATOR_1.0
   c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo
 } [current_project]
 set_property ip_output_repo c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.cache/ip [current_project]

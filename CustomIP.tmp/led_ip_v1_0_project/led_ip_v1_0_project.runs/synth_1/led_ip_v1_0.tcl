@@ -14,13 +14,15 @@ set_property parent.project_path c:/users/kmd17/documents/github/embedded_system
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
-set_property ip_repo_paths c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0 [current_project]
+set_property ip_repo_paths {
+  c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/GRAY_ACCELERATOR_1.0
+  c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo
+} [current_project]
 set_property ip_output_repo c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_project/led_ip_v1_0_project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/led_user_logic.v
-  c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v
-  c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v
+  c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v
+  c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp

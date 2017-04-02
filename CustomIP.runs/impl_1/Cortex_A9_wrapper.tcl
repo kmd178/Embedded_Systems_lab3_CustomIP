@@ -56,7 +56,7 @@ set rc [catch {
   set_property webtalk.parent_dir C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.cache/wt [current_project]
   set_property parent.project_path C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/kmd17/Documents/GitHub/ip_repo/led_ip_1.0
+  C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/GRAY_ACCELERATOR_1.0
   C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo
 } [current_project]
   set_property ip_output_repo C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.cache/ip [current_project]
@@ -73,8 +73,8 @@ set rc [catch {
   set_property netlist_only true [get_files c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_1/Cortex_A9_axi_gpio_0_1.dcp]
   add_files -quiet c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_xbar_0/Cortex_A9_xbar_0.dcp
   set_property netlist_only true [get_files c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_xbar_0/Cortex_A9_xbar_0.dcp]
-  add_files -quiet c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.dcp
-  set_property netlist_only true [get_files c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.dcp]
+  add_files -quiet C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.dcp
+  set_property netlist_only true [get_files C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0.dcp]
   add_files -quiet c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_auto_pc_0/Cortex_A9_auto_pc_0.dcp
   set_property netlist_only true [get_files c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_auto_pc_0/Cortex_A9_auto_pc_0.dcp]
   read_xdc -ref Cortex_A9_processing_system7_0_0 -cells inst c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_processing_system7_0_0/Cortex_A9_processing_system7_0_0.xdc

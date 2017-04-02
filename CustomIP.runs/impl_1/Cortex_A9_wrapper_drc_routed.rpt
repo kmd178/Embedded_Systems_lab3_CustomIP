@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Thu Mar 30 11:12:10 2017
+| Date         : Sun Apr 02 12:33:26 2017
 | Host         : SURFACE running 64-bit major release  (build 9200)
 | Command      : report_drc -file Cortex_A9_wrapper_drc_routed.rpt -pb Cortex_A9_wrapper_drc_routed.pb -rpx Cortex_A9_wrapper_drc_routed.rpx
 | Design       : Cortex_A9_wrapper
@@ -24,12 +24,30 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 0
-+------+----------+-------------+------------+
-| Rule | Severity | Description | Violations |
-+------+----------+-------------+------------+
-+------+----------+-------------+------------+
+             Violations found: 2
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PDRC-153    | Warning  | Gated clock check                                           | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2_n_0 is a gated clock net sourced by a combinational pin Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2/O, cell Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2 is driving clock pin of 9 cells. This could lead to large hold time violations. First few involved cells are:
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[7] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[2] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[1] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[0] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[8] {FDPE}
+
+Related violations: <none>
+
 
