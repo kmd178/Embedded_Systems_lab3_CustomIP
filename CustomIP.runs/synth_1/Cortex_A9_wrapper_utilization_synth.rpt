@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Sun Apr 02 12:25:18 2017
+| Date         : Sun Apr 02 19:12:23 2017
 | Host         : SURFACE running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Cortex_A9_wrapper_utilization_synth.rpt -pb Cortex_A9_wrapper_utilization_synth.pb
 | Design       : Cortex_A9_wrapper

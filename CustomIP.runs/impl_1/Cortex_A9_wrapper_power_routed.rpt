@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Sun Apr 02 12:33:29 2017
+| Date             : Sun Apr 02 19:17:30 2017
 | Host             : SURFACE running 64-bit major release  (build 9200)
 | Command          : report_power -file Cortex_A9_wrapper_power_routed.rpt -pb Cortex_A9_wrapper_power_summary_routed.pb -rpx Cortex_A9_wrapper_power_routed.rpx
 | Design           : Cortex_A9_wrapper
@@ -49,14 +49,14 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.004 |        3 |       --- |             --- |
+| Clocks                  |     0.005 |        3 |       --- |             --- |
 | Slice Logic             |     0.001 |     1956 |       --- |             --- |
 |   LUT as Logic          |     0.001 |      586 |     53200 |            1.10 |
 |   Register              |    <0.001 |      912 |    106400 |            0.86 |
 |   CARRY4                |    <0.001 |       18 |     13300 |            0.14 |
 |   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
 |   Others                |     0.000 |      215 |       --- |             --- |
-| Signals                 |     0.002 |     1433 |       --- |             --- |
+| Signals                 |     0.002 |     1436 |       --- |             --- |
 | I/O                     |    <0.001 |       21 |       200 |           10.50 |
 | PS7                     |     1.527 |        1 |       --- |             --- |
 | Static Power            |     0.157 |          |           |                 |
@@ -173,7 +173,7 @@ Table of Contents
 |                 cmd_translator_0                 |    <0.001 |
 |                   incr_cmd_0                     |    <0.001 |
 |                   wrap_cmd_0                     |    <0.001 |
-|               RD.r_channel_0                     |    <0.001 |
+|               RD.r_channel_0                     |     0.001 |
 |                 rd_data_fifo_0                   |    <0.001 |
 |                 transaction_fifo_0               |    <0.001 |
 |               SI_REG                             |     0.002 |

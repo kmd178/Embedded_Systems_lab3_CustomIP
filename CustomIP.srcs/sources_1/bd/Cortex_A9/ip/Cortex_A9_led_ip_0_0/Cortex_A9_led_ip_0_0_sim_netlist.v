@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-// Date        : Sun Apr 02 12:23:50 2017
+// Date        : Sun Apr 02 19:09:51 2017
 // Host        : SURFACE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0_sim_netlist.v
@@ -130,10 +130,12 @@ endmodule
 
 (* ORIG_REF_NAME = "gray_Nbits" *) 
 module Cortex_A9_led_ip_0_0_gray_Nbits
-   (\LED_reg[7] ,
+   (\state_reg[8]_0 ,
+    \LED_reg[7] ,
     s_axi_aclk,
     clk_en,
     s_axi_aresetn);
+  output \state_reg[8]_0 ;
   output [7:0]\LED_reg[7] ;
   input s_axi_aclk;
   input clk_en;
@@ -155,7 +157,13 @@ module Cortex_A9_led_ip_0_0_gray_Nbits
   wire \state[8]_i_1_n_0 ;
   wire \state[8]_i_2_n_0 ;
   wire \state[8]_i_3_n_0 ;
+  wire \state_reg[8]_0 ;
 
+  LUT1 #(
+    .INIT(2'h1)) 
+    \LED[7]_i_1 
+       (.I0(s_axi_aresetn),
+        .O(\state_reg[8]_0 ));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT1 #(
     .INIT(2'h1)) 
@@ -215,7 +223,6 @@ module Cortex_A9_led_ip_0_0_gray_Nbits
         .I2(\LED_reg[7] [3]),
         .I3(\LED_reg[7] [5]),
         .O(\state[6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
     .INIT(32'hFFDF0020)) 
     \state[7]_i_1 
@@ -225,6 +232,7 @@ module Cortex_A9_led_ip_0_0_gray_Nbits
         .I3(\LED_reg[7] [3]),
         .I4(\LED_reg[7] [6]),
         .O(\state[7]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
     .INIT(32'hFFFD0002)) 
     \state[8]_i_1 
@@ -254,7 +262,7 @@ module Cortex_A9_led_ip_0_0_gray_Nbits
     \state_reg[0] 
        (.C(\state[8]_i_2_n_0 ),
         .CE(1'b1),
-        .CLR(s_axi_aresetn),
+        .CLR(\state_reg[8]_0 ),
         .D(state7),
         .Q(state));
   FDCE #(
@@ -262,7 +270,7 @@ module Cortex_A9_led_ip_0_0_gray_Nbits
     \state_reg[1] 
        (.C(\state[8]_i_2_n_0 ),
         .CE(1'b1),
-        .CLR(s_axi_aresetn),
+        .CLR(\state_reg[8]_0 ),
         .D(\state[1]_i_1_n_0 ),
         .Q(\LED_reg[7] [0]));
   FDCE #(
@@ -270,7 +278,7 @@ module Cortex_A9_led_ip_0_0_gray_Nbits
     \state_reg[2] 
        (.C(\state[8]_i_2_n_0 ),
         .CE(1'b1),
-        .CLR(s_axi_aresetn),
+        .CLR(\state_reg[8]_0 ),
         .D(\state[2]_i_1_n_0 ),
         .Q(\LED_reg[7] [1]));
   FDCE #(
@@ -278,7 +286,7 @@ module Cortex_A9_led_ip_0_0_gray_Nbits
     \state_reg[3] 
        (.C(\state[8]_i_2_n_0 ),
         .CE(1'b1),
-        .CLR(s_axi_aresetn),
+        .CLR(\state_reg[8]_0 ),
         .D(\state[3]_i_1_n_0 ),
         .Q(\LED_reg[7] [2]));
   FDCE #(
@@ -286,7 +294,7 @@ module Cortex_A9_led_ip_0_0_gray_Nbits
     \state_reg[4] 
        (.C(\state[8]_i_2_n_0 ),
         .CE(1'b1),
-        .CLR(s_axi_aresetn),
+        .CLR(\state_reg[8]_0 ),
         .D(\state[4]_i_1_n_0 ),
         .Q(\LED_reg[7] [3]));
   FDCE #(
@@ -294,7 +302,7 @@ module Cortex_A9_led_ip_0_0_gray_Nbits
     \state_reg[5] 
        (.C(\state[8]_i_2_n_0 ),
         .CE(1'b1),
-        .CLR(s_axi_aresetn),
+        .CLR(\state_reg[8]_0 ),
         .D(\state[5]_i_1_n_0 ),
         .Q(\LED_reg[7] [4]));
   FDCE #(
@@ -302,24 +310,24 @@ module Cortex_A9_led_ip_0_0_gray_Nbits
     \state_reg[6] 
        (.C(\state[8]_i_2_n_0 ),
         .CE(1'b1),
-        .CLR(s_axi_aresetn),
+        .CLR(\state_reg[8]_0 ),
         .D(\state[6]_i_1_n_0 ),
         .Q(\LED_reg[7] [5]));
-  FDCE #(
+  FDPE #(
     .INIT(1'b0)) 
     \state_reg[7] 
        (.C(\state[8]_i_2_n_0 ),
         .CE(1'b1),
-        .CLR(s_axi_aresetn),
         .D(\state[7]_i_1_n_0 ),
+        .PRE(\state_reg[8]_0 ),
         .Q(\LED_reg[7] [6]));
-  FDPE #(
+  FDCE #(
     .INIT(1'b0)) 
     \state_reg[8] 
        (.C(\state[8]_i_2_n_0 ),
         .CE(1'b1),
+        .CLR(\state_reg[8]_0 ),
         .D(\state[8]_i_1_n_0 ),
-        .PRE(s_axi_aresetn),
         .Q(\LED_reg[7] [7]));
 endmodule
 
@@ -334,11 +342,11 @@ module Cortex_A9_led_ip_0_0_led_ip_v1_0
     s_axi_bvalid,
     s_axi_aclk,
     s_axi_arvalid,
-    s_axi_aresetn,
     s_axi_awaddr,
     s_axi_wdata,
     s_axi_awvalid,
     s_axi_wvalid,
+    s_axi_aresetn,
     s_axi_bready,
     s_axi_rready);
   output S_AXI_ARREADY;
@@ -350,11 +358,11 @@ module Cortex_A9_led_ip_0_0_led_ip_v1_0
   output s_axi_bvalid;
   input s_axi_aclk;
   input s_axi_arvalid;
-  input s_axi_aresetn;
   input [3:0]s_axi_awaddr;
   input [30:0]s_axi_wdata;
   input s_axi_awvalid;
   input s_axi_wvalid;
+  input s_axi_aresetn;
   input s_axi_bready;
   input s_axi_rready;
 
@@ -405,11 +413,11 @@ module Cortex_A9_led_ip_0_0_led_ip_v1_0_S_AXI
     s_axi_bvalid,
     s_axi_aclk,
     s_axi_arvalid,
-    s_axi_aresetn,
     s_axi_awaddr,
     s_axi_wdata,
     s_axi_awvalid,
     s_axi_wvalid,
+    s_axi_aresetn,
     s_axi_bready,
     s_axi_rready);
   output S_AXI_ARREADY;
@@ -421,11 +429,11 @@ module Cortex_A9_led_ip_0_0_led_ip_v1_0_S_AXI
   output s_axi_bvalid;
   input s_axi_aclk;
   input s_axi_arvalid;
-  input s_axi_aresetn;
   input [3:0]s_axi_awaddr;
   input [30:0]s_axi_wdata;
   input s_axi_awvalid;
   input s_axi_wvalid;
+  input s_axi_aresetn;
   input s_axi_bready;
   input s_axi_rready;
 
@@ -670,12 +678,8 @@ module Cortex_A9_led_ip_0_0_led_user_logic
        (.\LED_reg[7] (\LED_reg[7]_0 ),
         .clk_en(clk_en),
         .s_axi_aclk(s_axi_aclk),
-        .s_axi_aresetn(s_axi_aresetn));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \LED[7]_i_1 
-       (.I0(s_axi_aresetn),
-        .O(SR));
+        .s_axi_aresetn(s_axi_aresetn),
+        .\state_reg[8]_0 (SR));
   LUT5 #(
     .INIT(32'h00010000)) 
     \LED[7]_i_2 
@@ -693,24 +697,24 @@ module Cortex_A9_led_ip_0_0_led_user_logic
         .I2(s_axi_awvalid),
         .I3(s_axi_wvalid),
         .O(\LED[7]_i_3_n_0 ));
-  FDRE \LED_reg[0] 
+  FDSE \LED_reg[0] 
        (.C(s_axi_aclk),
         .CE(LED0),
         .D(\LED_reg[7]_0 [0]),
         .Q(LED[0]),
-        .R(SR));
-  FDRE \LED_reg[1] 
+        .S(SR));
+  FDSE \LED_reg[1] 
        (.C(s_axi_aclk),
         .CE(LED0),
         .D(\LED_reg[7]_0 [1]),
         .Q(LED[1]),
-        .R(SR));
-  FDRE \LED_reg[2] 
+        .S(SR));
+  FDSE \LED_reg[2] 
        (.C(s_axi_aclk),
         .CE(LED0),
         .D(\LED_reg[7]_0 [2]),
         .Q(LED[2]),
-        .R(SR));
+        .S(SR));
   FDRE \LED_reg[3] 
        (.C(s_axi_aclk),
         .CE(LED0),

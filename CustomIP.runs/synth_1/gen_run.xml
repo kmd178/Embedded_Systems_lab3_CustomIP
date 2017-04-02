@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1491125070">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1491149246">
   <File Type="RDS-PROPCONSTRS" Name="Cortex_A9_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="Cortex_A9_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="Cortex_A9_wrapper.vds"/>

@@ -1486,19 +1486,19 @@ preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 270 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y 80 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 1 3 NJ 40 NJ 40 NJ
 preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 N
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 410
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 410 420 710
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 20 360 380
-preplace netloc btns_5bits_ip2intc_irpt 1 0 4 20 170 400J 30 NJ 30 930
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 690
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 420
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 420 420 720
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 360 390
+preplace netloc btns_5bits_ip2intc_irpt 1 0 4 30 170 410J 30 NJ 30 940
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 700
 preplace netloc axi_gpio_0_GPIO1 1 3 1 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 60 NJ 60 NJ
 preplace netloc axi_gpio_0_GPIO 1 3 1 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 10 400 390 400 700
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 690
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 400 400 400 710
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 700
 preplace netloc led_ip_LED 1 3 1 NJ
-preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 400
-levelinfo -pg 1 -10 200 560 820 950 -top 0 -bot 470
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 410
+levelinfo -pg 1 0 210 570 830 960 -top 0 -bot 470
 ",
 }
 

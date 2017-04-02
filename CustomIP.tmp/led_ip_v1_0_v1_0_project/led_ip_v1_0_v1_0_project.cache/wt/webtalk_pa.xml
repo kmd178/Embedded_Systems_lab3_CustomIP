@@ -3,9 +3,9 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sun Apr 02 11:13:55 2017">
+<application name="pa" timeStamp="Sun Apr 02 19:29:51 2017">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="02aec0dbf65f49589f01bfa2b0c277b0" type="ProjectID"/>
+<property name="ProjectID" value="6ded017f3c424074bb57557473590b0c" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
@@ -17,29 +17,25 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="CoreView" value="1" type="JavaHandler"/>
-<property name="EditInIPPackagerHandler" value="1" type="JavaHandler"/>
-<property name="IPPackagerHandler" value="2" type="JavaHandler"/>
-<property name="OpenProject" value="1" type="JavaHandler"/>
-<property name="RunSynthesis" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="NewExportHardware" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
 <property name="BaseDialog_CANCEL" value="1" type="GuiResourceData"/>
 <property name="BaseDialog_OK" value="2" type="GuiResourceData"/>
-<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="3" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="9" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="3" type="GuiResourceData"/>
-<property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiResourceData"/>
-<property name="MessageBanner_SEE_LIST_OF_WARNING_MESSAGES" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_EDIT_IN_IP_PACKAGER" value="1" type="GuiResourceData"/>
-<property name="PackagerStepsPanel_PACKAGER_STEPS_LIST" value="3" type="GuiResourceData"/>
-<property name="PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE" value="2" type="GuiResourceData"/>
-<property name="ReviewContentPanel_RE_PACKAGE_IP" value="1" type="GuiResourceData"/>
+<property name="MainMenuMgr_EDIT" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_EXPORT" value="3" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_FLOW" value="1" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_FILE" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_TOOLS" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_EXPORT_HARDWARE" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="16" type="GuiMode"/>
+<property name="GuiMode" value="17" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="12" type="TclMode"/>
+<property name="TclMode" value="13" type="TclMode"/>
 </item>
 </section>
 </application>

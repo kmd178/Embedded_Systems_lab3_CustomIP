@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
--- Date        : Sun Apr 02 12:23:50 2017
+-- Date        : Sun Apr 02 19:09:51 2017
 -- Host        : SURFACE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_led_ip_0_0/Cortex_A9_led_ip_0_0_sim_netlist.vhdl
@@ -16,6 +16,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity Cortex_A9_led_ip_0_0_gray_Nbits is
   port (
+    \state_reg[8]_0\ : out STD_LOGIC;
     \LED_reg[7]\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_aclk : in STD_LOGIC;
     clk_en : in STD_LOGIC;
@@ -39,6 +40,7 @@ architecture STRUCTURE of Cortex_A9_led_ip_0_0_gray_Nbits is
   signal \state[8]_i_1_n_0\ : STD_LOGIC;
   signal \state[8]_i_2_n_0\ : STD_LOGIC;
   signal \state[8]_i_3_n_0\ : STD_LOGIC;
+  signal \^state_reg[8]_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \state[0]_i_1\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of \state[1]_i_1\ : label is "soft_lutpair3";
@@ -46,10 +48,19 @@ architecture STRUCTURE of Cortex_A9_led_ip_0_0_gray_Nbits is
   attribute SOFT_HLUTNM of \state[3]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \state[4]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \state[6]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \state[7]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \state[8]_i_1\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \state[8]_i_3\ : label is "soft_lutpair2";
 begin
   \LED_reg[7]\(7 downto 0) <= \^led_reg[7]\(7 downto 0);
+  \state_reg[8]_0\ <= \^state_reg[8]_0\;
+\LED[7]_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => s_axi_aresetn,
+      O => \^state_reg[8]_0\
+    );
 \state[0]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
@@ -175,7 +186,7 @@ begin
         port map (
       C => \state[8]_i_2_n_0\,
       CE => '1',
-      CLR => s_axi_aresetn,
+      CLR => \^state_reg[8]_0\,
       D => state7,
       Q => state(0)
     );
@@ -186,7 +197,7 @@ begin
         port map (
       C => \state[8]_i_2_n_0\,
       CE => '1',
-      CLR => s_axi_aresetn,
+      CLR => \^state_reg[8]_0\,
       D => \state[1]_i_1_n_0\,
       Q => \^led_reg[7]\(0)
     );
@@ -197,7 +208,7 @@ begin
         port map (
       C => \state[8]_i_2_n_0\,
       CE => '1',
-      CLR => s_axi_aresetn,
+      CLR => \^state_reg[8]_0\,
       D => \state[2]_i_1_n_0\,
       Q => \^led_reg[7]\(1)
     );
@@ -208,7 +219,7 @@ begin
         port map (
       C => \state[8]_i_2_n_0\,
       CE => '1',
-      CLR => s_axi_aresetn,
+      CLR => \^state_reg[8]_0\,
       D => \state[3]_i_1_n_0\,
       Q => \^led_reg[7]\(2)
     );
@@ -219,7 +230,7 @@ begin
         port map (
       C => \state[8]_i_2_n_0\,
       CE => '1',
-      CLR => s_axi_aresetn,
+      CLR => \^state_reg[8]_0\,
       D => \state[4]_i_1_n_0\,
       Q => \^led_reg[7]\(3)
     );
@@ -230,7 +241,7 @@ begin
         port map (
       C => \state[8]_i_2_n_0\,
       CE => '1',
-      CLR => s_axi_aresetn,
+      CLR => \^state_reg[8]_0\,
       D => \state[5]_i_1_n_0\,
       Q => \^led_reg[7]\(4)
     );
@@ -241,30 +252,30 @@ begin
         port map (
       C => \state[8]_i_2_n_0\,
       CE => '1',
-      CLR => s_axi_aresetn,
+      CLR => \^state_reg[8]_0\,
       D => \state[6]_i_1_n_0\,
       Q => \^led_reg[7]\(5)
     );
-\state_reg[7]\: unisim.vcomponents.FDCE
+\state_reg[7]\: unisim.vcomponents.FDPE
     generic map(
       INIT => '0'
     )
         port map (
       C => \state[8]_i_2_n_0\,
       CE => '1',
-      CLR => s_axi_aresetn,
       D => \state[7]_i_1_n_0\,
+      PRE => \^state_reg[8]_0\,
       Q => \^led_reg[7]\(6)
     );
-\state_reg[8]\: unisim.vcomponents.FDPE
+\state_reg[8]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => \state[8]_i_2_n_0\,
       CE => '1',
+      CLR => \^state_reg[8]_0\,
       D => \state[8]_i_1_n_0\,
-      PRE => s_axi_aresetn,
       Q => \^led_reg[7]\(7)
     );
 end STRUCTURE;
@@ -312,15 +323,8 @@ Counter: entity work.Cortex_A9_led_ip_0_0_gray_Nbits
       \LED_reg[7]\(7 downto 0) => \^led_reg[7]_0\(7 downto 0),
       clk_en => clk_en,
       s_axi_aclk => s_axi_aclk,
-      s_axi_aresetn => s_axi_aresetn
-    );
-\LED[7]_i_1\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => s_axi_aresetn,
-      O => \^sr\(0)
+      s_axi_aresetn => s_axi_aresetn,
+      \state_reg[8]_0\ => \^sr\(0)
     );
 \LED[7]_i_2\: unisim.vcomponents.LUT5
     generic map(
@@ -345,29 +349,29 @@ Counter: entity work.Cortex_A9_led_ip_0_0_gray_Nbits
       I3 => s_axi_wvalid,
       O => \LED[7]_i_3_n_0\
     );
-\LED_reg[0]\: unisim.vcomponents.FDRE
+\LED_reg[0]\: unisim.vcomponents.FDSE
      port map (
       C => s_axi_aclk,
       CE => LED0,
       D => \^led_reg[7]_0\(0),
       Q => LED(0),
-      R => \^sr\(0)
+      S => \^sr\(0)
     );
-\LED_reg[1]\: unisim.vcomponents.FDRE
+\LED_reg[1]\: unisim.vcomponents.FDSE
      port map (
       C => s_axi_aclk,
       CE => LED0,
       D => \^led_reg[7]_0\(1),
       Q => LED(1),
-      R => \^sr\(0)
+      S => \^sr\(0)
     );
-\LED_reg[2]\: unisim.vcomponents.FDRE
+\LED_reg[2]\: unisim.vcomponents.FDSE
      port map (
       C => s_axi_aclk,
       CE => LED0,
       D => \^led_reg[7]_0\(2),
       Q => LED(2),
-      R => \^sr\(0)
+      S => \^sr\(0)
     );
 \LED_reg[3]\: unisim.vcomponents.FDRE
      port map (
@@ -533,11 +537,11 @@ entity Cortex_A9_led_ip_0_0_led_ip_v1_0_S_AXI is
     s_axi_bvalid : out STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
     s_axi_arvalid : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_wdata : in STD_LOGIC_VECTOR ( 30 downto 0 );
     s_axi_awvalid : in STD_LOGIC;
     s_axi_wvalid : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
     s_axi_bready : in STD_LOGIC;
     s_axi_rready : in STD_LOGIC
   );
@@ -798,11 +802,11 @@ entity Cortex_A9_led_ip_0_0_led_ip_v1_0 is
     s_axi_bvalid : out STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
     s_axi_arvalid : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_wdata : in STD_LOGIC_VECTOR ( 30 downto 0 );
     s_axi_awvalid : in STD_LOGIC;
     s_axi_wvalid : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
     s_axi_bready : in STD_LOGIC;
     s_axi_rready : in STD_LOGIC
   );
