@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="Cortex_A9_led_ip_0_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1491149246">
+<GenRun Id="Cortex_A9_led_ip_0_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1491287966">
   <File Type="RDS-PROPCONSTRS" Name="Cortex_A9_led_ip_0_0_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="Cortex_A9_led_ip_0_0.tcl"/>
   <File Type="RDS-RDS" Name="Cortex_A9_led_ip_0_0.vds"/>

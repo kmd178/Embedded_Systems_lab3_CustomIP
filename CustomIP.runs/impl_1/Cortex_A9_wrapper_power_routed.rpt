@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Sun Apr 02 19:17:30 2017
+| Date             : Tue Apr 04 09:42:50 2017
 | Host             : SURFACE running 64-bit major release  (build 9200)
 | Command          : report_power -file Cortex_A9_wrapper_power_routed.rpt -pb Cortex_A9_wrapper_power_summary_routed.pb -rpx Cortex_A9_wrapper_power_routed.rpx
 | Design           : Cortex_A9_wrapper
@@ -31,7 +31,7 @@ Table of Contents
 
 +--------------------------+-------+
 | Total On-Chip Power (W)  | 1.691 |
-| Dynamic (W)              | 1.534 |
+| Dynamic (W)              | 1.535 |
 | Device Static (W)        | 0.157 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 65.5  |
@@ -50,13 +50,13 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.005 |        3 |       --- |             --- |
-| Slice Logic             |     0.001 |     1956 |       --- |             --- |
-|   LUT as Logic          |     0.001 |      586 |     53200 |            1.10 |
-|   Register              |    <0.001 |      912 |    106400 |            0.86 |
+| Slice Logic             |     0.001 |     1960 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |      590 |     53200 |            1.11 |
+|   Register              |    <0.001 |      913 |    106400 |            0.86 |
 |   CARRY4                |    <0.001 |       18 |     13300 |            0.14 |
 |   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
 |   Others                |     0.000 |      215 |       --- |             --- |
-| Signals                 |     0.002 |     1436 |       --- |             --- |
+| Signals                 |     0.002 |     1439 |       --- |             --- |
 | I/O                     |    <0.001 |       21 |       200 |           10.50 |
 | PS7                     |     1.527 |        1 |       --- |             --- |
 | Static Power            |     0.157 |          |           |                 |
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.022 |       0.008 |      0.015 |
+| Vccint    |       1.000 |     0.023 |       0.008 |      0.015 |
 | Vccaux    |       1.800 |     0.021 |       0.000 |      0.021 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -146,7 +146,7 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| Cortex_A9_wrapper                                |     1.534 |
+| Cortex_A9_wrapper                                |     1.535 |
 |   Cortex_A9_i                                    |     1.534 |
 |     btns_5bits                                   |    <0.001 |
 |       U0                                         |    <0.001 |
@@ -163,7 +163,7 @@ Table of Contents
 |             Counter                              |    <0.001 |
 |     processing_system7_0                         |     1.527 |
 |       inst                                       |     1.527 |
-|     ps7_0_axi_periph                             |     0.005 |
+|     ps7_0_axi_periph                             |     0.006 |
 |       s00_couplers                               |     0.005 |
 |         auto_pc                                  |     0.005 |
 |           inst                                   |     0.005 |

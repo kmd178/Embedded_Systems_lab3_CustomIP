@@ -1,0 +1,140 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar 31 16:39:43 2017
+# Process ID: 11324
+# Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14268 C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\CustomIP.xpr
+# Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/vivado.log
+# Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 840.578 ; gain = 175.305
+open_bd_design {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - btns_5bits
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - sws_8bits
+Adding cell -- xilinx.com:user:led_ip:1.0 - led_ip
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <Cortex_A9> from BD file <C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 903.059 ; gain = 29.496
+create_peripheral xilinx.com user GRAY_ACCELERATOR 1.0 -dir C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:GRAY_ACCELERATOR:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:GRAY_ACCELERATOR:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:GRAY_ACCELERATOR:1.0]
+set_property  ip_repo_paths  {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/GRAY_ACCELERATOR_1.0 C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo} [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/GRAY_ACCELERATOR_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo'.
+ipx::edit_ip_in_project -upgrade true -name GRAY_ACCELERATOR_v1_0_v1_0_project -directory C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.tmp/GRAY_ACCELERATOR_v1_0_v1_0_project c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/GRAY_ACCELERATOR_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/gray_accelerator_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/GRAY_ACCELERATOR_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 988.742 ; gain = 2.379
+current_project CustomIP
+current_project GRAY_ACCELERATOR_v1_0_v1_0_project
+close_project
+ipx::edit_ip_in_project -upgrade true -name led_ip_v1_0_project -directory C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.tmp/led_ip_v1_0_project c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/led_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/GRAY_ACCELERATOR_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1078.574 ; gain = 0.250
+current_project CustomIP
+current_project led_ip_v1_0_project
+close [ open C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/led_ip_1.0/src/gray_Nbits.v w ]
+add_files C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/led_ip_1.0/src/gray_Nbits.v
+current_project CustomIP
+ipx::edit_ip_in_project -upgrade true -name GRAY_ACCELERATOR_v1_0_v1_0_project -directory C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.tmp/GRAY_ACCELERATOR_v1_0_v1_0_project c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/GRAY_ACCELERATOR_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/gray_accelerator_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/GRAY_ACCELERATOR_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1095.938 ; gain = 0.000
+close_project
+current_project CustomIP
+current_project led_ip_v1_0_project
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v" into library work [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/led_ip_1.0/hdl/led_ip_v1_0_S_AXI.v:1]
+[Fri Mar 31 22:32:58 2017] Launched synth_1...
+Run output will be captured here: c:/users/kmd17/documents/github/embedded_systems_lab3_customip/customip.tmp/led_ip_v1_0_project/led_ip_v1_0_project.runs/synth_1/runme.log
+set_property core_revision 7 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project
+close_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1127.039 ; gain = 0.000
+update_ip_catalog -rebuild -repo_path c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo'
+upgrade_ip
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+upgrade_ip
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+upgrade_ip[*]
+invalid command name "upgrade_ip[*]"
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:led_ip:1.0 [get_ips  Cortex_A9_led_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd'
+INFO: [IP_Flow 19-3422] Upgraded Cortex_A9_led_ip_0_0 (led_ip_v1.0 1.0) from revision 6 to revision 7
+Wrote  : <C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips Cortex_A9_led_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd]
+Verilog Output written to : C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9.v
+Verilog Output written to : C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9_wrapper.v
+Wrote  : <C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_5bits .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sws_8bits .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block led_ip .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hw_handoff/Cortex_A9.hwh
+Generated Block Design Tcl file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hw_handoff/Cortex_A9_bd.tcl
+Generated Hardware Definition File C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9.hwdef
+generate_target: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1260.836 ; gain = 133.797
+catch { config_ip_cache -export [get_ips -all Cortex_A9_led_ip_0_0] }
+catch { config_ip_cache -export [get_ips -all Cortex_A9_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Cortex_A9_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 4.708 MB.
+export_ip_user_files -of_objects [get_files C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd]
+launch_runs -jobs 2 Cortex_A9_led_ip_0_0_synth_1
+[Fri Mar 31 22:44:43 2017] Launched Cortex_A9_led_ip_0_0_synth_1...
+Run output will be captured here: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.runs/Cortex_A9_led_ip_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd] -directory C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.ip_user_files -ipstatic_source_dir C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.cache/compile_simlib/modelsim} {questa=C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.cache/compile_simlib/questa} {riviera=C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.cache/compile_simlib/riviera} {activehdl=C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 31 22:46:35 2017...

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Sun Apr 02 19:14:37 2017
+| Date         : Tue Apr 04 09:41:46 2017
 | Host         : SURFACE running 64-bit major release  (build 9200)
 | Command      : report_drc -file Cortex_A9_wrapper_drc_opted.rpt
 | Design       : Cortex_A9_wrapper
@@ -36,11 +36,11 @@ Table of Contents
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state[8]_i_2 is driving clock pin of 9 cells. This could lead to large hold time violations. First few involved cells are:
-    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[1] {FDCE}
-    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[2] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[8] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[6] {FDCE}
     Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[3] {FDCE}
-    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[4] {FDCE}
-    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[7] {FDPE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[5] {FDCE}
+    Cortex_A9_i/led_ip/inst/led_ip_v1_0_S_AXI_inst/U1/Counter/state_reg[2] {FDCE}
 
 Related violations: <none>
 

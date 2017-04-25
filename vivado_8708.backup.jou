@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Apr 02 19:49:02 2017
+# Process ID: 8708
+# Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7492 C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\CustomIP.xpr
+# Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/vivado.log
+# Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.xpr
