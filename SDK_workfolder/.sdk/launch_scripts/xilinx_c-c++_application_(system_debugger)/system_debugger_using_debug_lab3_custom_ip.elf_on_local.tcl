@@ -9,6 +9,11 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
 rst -processor
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+profile -freq 100000 -scratchaddr 0x10000
 dow C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+set bpid [bpadd -addr &_exit]
+con -block
+profile -out C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/gmon.out
+bpremove $bpid
 con

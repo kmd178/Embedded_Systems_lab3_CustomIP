@@ -721,3 +721,554 @@ con
 09:49:54 INFO  : Launch script is exported to file 'C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab3_custom_ip.elf_on_local.tcl'
 10:15:43 INFO  : Disconnected from the channel tcfchan#2.
 10:15:45 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:08:54 INFO  : Registering command handlers for SDK TCF services
+11:08:55 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\temp_xsdb_launch_script.tcl
+11:08:57 INFO  : XSCT server has started successfully.
+11:08:57 INFO  : Successfully done setting XSCT server connection channel  
+11:08:57 INFO  : Successfully done setting SDK workspace  
+11:09:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:09:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248553221" && level==0} -index 1' command is executed.
+11:09:10 INFO  : FPGA configured successfully with bitstream "C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/Cortex_A9_wrapper.bit"
+11:09:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248553221" && level==0} -index 1' command is executed.
+11:09:14 INFO  : 'fpga -state' command is executed.
+11:09:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:09:15 INFO  : Jtag cable 'Digilent Zed 210248553221' is selected.
+11:09:15 INFO  : 'jtag frequency' command is executed.
+11:09:15 INFO  : Sourcing of 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:09:16 INFO  : Context for 'APU' is selected.
+11:09:16 INFO  : Hardware design information is loaded from 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf'.
+11:09:16 INFO  : Context for 'APU' is selected.
+11:09:17 INFO  : 'stop' command is executed.
+11:09:23 INFO  : 'ps7_init' command is executed.
+11:09:23 INFO  : 'ps7_post_config' command is executed.
+11:09:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:09:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:09:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:09:26 INFO  : The application 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:09:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+loadhw C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+dow C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf
+----------------End of Script----------------
+
+11:09:26 INFO  : Memory regions updated for context APU
+11:09:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:09:26 INFO  : 'con' command is executed.
+11:09:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+con
+----------------End of Script----------------
+
+11:09:26 INFO  : Launch script is exported to file 'C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab3_custom_ip.elf_on_local.tcl'
+11:10:51 INFO  : Disconnected from the channel tcfchan#1.
+11:45:07 INFO  : Registering command handlers for SDK TCF services
+11:45:07 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\temp_xsdb_launch_script.tcl
+11:45:10 INFO  : XSCT server has started successfully.
+11:45:14 INFO  : Successfully done setting XSCT server connection channel  
+11:45:16 INFO  : Successfully done setting SDK workspace  
+11:45:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248553221" && level==0} -index 1' command is executed.
+11:45:21 INFO  : FPGA configured successfully with bitstream "C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/Cortex_A9_wrapper.bit"
+11:45:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248553221" && level==0} -index 1' command is executed.
+11:45:28 INFO  : 'fpga -state' command is executed.
+11:45:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:28 INFO  : Jtag cable 'Digilent Zed 210248553221' is selected.
+11:45:29 INFO  : 'jtag frequency' command is executed.
+11:45:29 INFO  : Sourcing of 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:45:29 INFO  : Context for 'APU' is selected.
+11:45:29 INFO  : Hardware design information is loaded from 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf'.
+11:45:30 INFO  : Context for 'APU' is selected.
+11:45:31 INFO  : 'stop' command is executed.
+11:45:36 INFO  : 'ps7_init' command is executed.
+11:45:37 INFO  : 'ps7_post_config' command is executed.
+11:45:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:45:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:39 INFO  : The application 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:45:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+loadhw C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+dow C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf
+----------------End of Script----------------
+
+11:45:39 INFO  : Memory regions updated for context APU
+11:45:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:40 INFO  : 'con' command is executed.
+11:45:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+con
+----------------End of Script----------------
+
+11:45:40 INFO  : Launch script is exported to file 'C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab3_custom_ip.elf_on_local.tcl'
+11:46:00 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+11:46:00 WARN  : Unable to obtain port 2357 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+11:46:04 INFO  : Disconnected from the channel tcfchan#1.
+11:48:08 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Elf file associated with target
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:701)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:48:31 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Elf file associated with target
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:48:38 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Elf file associated with target
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:50:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:51:28 INFO  : Refreshed build settings on project lab3_Custom_Ip
+11:52:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:52:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:52:26 ERROR : Binary has been compiled for profiling. 
+However certain parameters required for profiling have not been set in the launch configuration.
+Please modify your launch configuration before running this program.
+11:52:26 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Please provide profiling parameters in the Run configuration (ELF has mcount function, but profiling not enabled in the Run configuration).
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:123)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:53:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248553221" && level==0} -index 1' command is executed.
+11:53:07 INFO  : 'fpga -state' command is executed.
+11:53:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:53:07 INFO  : Jtag cable 'Digilent Zed 210248553221' is selected.
+11:53:08 INFO  : 'jtag frequency' command is executed.
+11:53:08 INFO  : Sourcing of 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:53:08 INFO  : Context for 'APU' is selected.
+11:53:08 INFO  : Hardware design information is loaded from 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf'.
+11:53:08 INFO  : Context for 'APU' is selected.
+11:53:09 INFO  : 'stop' command is executed.
+11:53:20 INFO  : 'ps7_init' command is executed.
+11:53:21 INFO  : 'ps7_post_config' command is executed.
+11:53:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:53:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:53:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:53:25 INFO  : The application 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:53:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+loadhw C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+dow C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf
+----------------End of Script----------------
+
+11:53:26 INFO  : Memory regions updated for context APU
+11:53:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:53:26 INFO  : 'con' command is executed.
+11:53:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248553221"} -index 0
+con
+----------------End of Script----------------
+
+11:53:26 INFO  : Launch script is exported to file 'C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab3_custom_ip.elf_on_local.tcl'
+11:54:05 INFO  : Refreshed build settings on project lab3_Custom_Ip
+11:54:46 INFO  : Disconnected from the channel tcfchan#2.
+11:54:48 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:55:17 INFO  : Registering command handlers for SDK TCF services
+11:55:17 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\temp_xsdb_launch_script.tcl
+11:55:20 INFO  : XSCT server has started successfully.
+11:55:24 INFO  : Successfully done setting XSCT server connection channel  
+11:55:24 INFO  : Successfully done setting SDK workspace  
+11:55:34 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+11:55:34 WARN  : Unable to obtain port 2357 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+11:55:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:55:39 ERROR : Binary has been compiled for profiling. 
+However certain parameters required for profiling have not been set in the launch configuration.
+Please modify your launch configuration before running this program.
+11:55:39 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Please provide profiling parameters in the Run configuration (ELF has mcount function, but profiling not enabled in the Run configuration).
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:123)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:57:20 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:57:39 INFO  : Registering command handlers for SDK TCF services
+11:57:40 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\temp_xsdb_launch_script.tcl
+11:57:42 INFO  : XSCT server has started successfully.
+11:57:43 INFO  : Successfully done setting XSCT server connection channel  
+11:57:43 INFO  : Successfully done setting SDK workspace  
+11:57:45 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+11:57:45 WARN  : Unable to obtain port 2357 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+11:57:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:58:51 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:59:58 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+11:59:58 ERROR : Timeout occured while waiting to get reply for command "source C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl"
+11:59:58 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while sourcing C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl : 
+	at com.xilinx.sdk.targetmanager.internal.TM.sourceTcl(TM.java:1021)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:441)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+12:01:32 INFO  : Refreshed build settings on project lab3_Custom_Ip
+12:02:22 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Elf file associated with target
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+12:03:41 INFO  : Refreshed build settings on project lab3_Custom_Ip
+12:04:41 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Elf file associated with target
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+12:05:03 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Elf file associated with target
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+12:07:21 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_post_config method.
+No Elf file associated with target
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_post_config(TM.java:1099)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:518)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+12:07:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:12:38 INFO  : Refreshed build settings on project lab3_Custom_Ip
+12:13:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:13:49 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '64' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:534)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+12:19:41 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:33:08 INFO  : Registering command handlers for SDK TCF services
+09:33:09 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\temp_xsdb_launch_script.tcl
+09:33:13 INFO  : XSCT server has started successfully.
+09:33:22 INFO  : Successfully done setting XSCT server connection channel  
+09:33:22 INFO  : Successfully done setting SDK workspace  
+10:11:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248650715" && level==0} -index 1' command is executed.
+10:11:37 INFO  : 'fpga -state' command is executed.
+10:11:55 INFO  : Memory regions updated for context APU
+10:11:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248650715" && level==0} -index 1' command is executed.
+10:11:59 INFO  : 'fpga -state' command is executed.
+10:12:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:12:02 INFO  : Jtag cable 'Digilent Zed 210248650715' is selected.
+10:12:02 INFO  : 'jtag frequency' command is executed.
+10:12:02 INFO  : Sourcing of 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:12:03 INFO  : Context for 'APU' is selected.
+10:12:03 INFO  : Hardware design information is loaded from 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf'.
+10:12:04 INFO  : Context for 'APU' is selected.
+10:12:04 INFO  : 'stop' command is executed.
+10:12:10 INFO  : 'ps7_init' command is executed.
+10:12:10 INFO  : 'ps7_post_config' command is executed.
+10:12:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:12:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:12:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:12:12 INFO  : 'profile -freq 1000000 -scratchaddr 0x10000000' command is executed.
+10:12:13 INFO  : The application 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:12:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+loadhw C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+profile -freq 1000000 -scratchaddr 0x10000000
+dow C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf
+----------------End of Script----------------
+
+10:12:14 INFO  : Memory regions updated for context APU
+10:12:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:12:15 INFO  : 'set bpid [bpadd -addr &_exit]' command is executed.
+10:15:29 INFO  : Registering command handlers for SDK TCF services
+10:15:29 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\temp_xsdb_launch_script.tcl
+10:15:33 INFO  : XSCT server has started successfully.
+10:15:41 INFO  : Successfully done setting XSCT server connection channel  
+10:15:48 INFO  : Successfully done setting SDK workspace  
+10:15:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:15:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248650715" && level==0} -index 1' command is executed.
+10:15:58 INFO  : FPGA configured successfully with bitstream "C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/Cortex_A9_wrapper.bit"
+10:16:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248650715" && level==0} -index 1' command is executed.
+10:16:34 INFO  : 'fpga -state' command is executed.
+10:16:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:36 INFO  : Jtag cable 'Digilent Zed 210248650715' is selected.
+10:16:36 INFO  : 'jtag frequency' command is executed.
+10:16:36 INFO  : Sourcing of 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:16:36 INFO  : Context for 'APU' is selected.
+10:16:36 INFO  : Hardware design information is loaded from 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf'.
+10:16:37 INFO  : Context for 'APU' is selected.
+10:16:38 INFO  : 'stop' command is executed.
+10:16:52 INFO  : 'ps7_init' command is executed.
+10:16:53 INFO  : 'ps7_post_config' command is executed.
+10:16:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:16:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:16:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:16:54 INFO  : 'profile -freq 100000 -scratchaddr 0x10000' command is executed.
+10:16:59 ERROR : Memory write error at 0x100000. APB AP transaction error, DAP status f0000021
+10:16:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+loadhw C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+profile -freq 100000 -scratchaddr 0x10000
+dow C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf
+----------------End of Script----------------
+
+10:17:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:17:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248650715" && level==0} -index 1' command is executed.
+10:17:24 INFO  : FPGA configured successfully with bitstream "C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/Cortex_A9_wrapper.bit"
+10:17:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248650715" && level==0} -index 1' command is executed.
+10:17:35 INFO  : 'fpga -state' command is executed.
+10:17:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:17:36 INFO  : Jtag cable 'Digilent Zed 210248650715' is selected.
+10:17:37 INFO  : 'jtag frequency' command is executed.
+10:17:37 INFO  : Sourcing of 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:17:37 INFO  : Context for 'APU' is selected.
+10:17:37 INFO  : Hardware design information is loaded from 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf'.
+10:17:37 INFO  : Context for 'APU' is selected.
+10:17:38 INFO  : 'stop' command is executed.
+10:17:43 INFO  : 'ps7_init' command is executed.
+10:17:43 INFO  : 'ps7_post_config' command is executed.
+10:17:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:17:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:45 INFO  : 'profile -freq 100000 -scratchaddr 0x10000' command is executed.
+10:17:47 INFO  : The application 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:17:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+loadhw C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+profile -freq 100000 -scratchaddr 0x10000
+dow C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf
+----------------End of Script----------------
+
+10:17:47 INFO  : Memory regions updated for context APU
+10:17:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:48 INFO  : 'set bpid [bpadd -addr &_exit]' command is executed.
+10:37:22 INFO  : Registering command handlers for SDK TCF services
+10:37:23 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\temp_xsdb_launch_script.tcl
+10:37:26 INFO  : XSCT server has started successfully.
+10:37:26 INFO  : Successfully done setting XSCT server connection channel  
+10:37:30 INFO  : Successfully done setting SDK workspace  
+10:39:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248650715" && level==0} -index 1' command is executed.
+10:39:02 INFO  : 'fpga -state' command is executed.
+10:39:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:03 INFO  : Jtag cable 'Digilent Zed 210248650715' is selected.
+10:39:03 INFO  : 'jtag frequency' command is executed.
+10:39:03 INFO  : Sourcing of 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:39:03 INFO  : Context for 'APU' is selected.
+10:39:03 INFO  : Hardware design information is loaded from 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf'.
+10:39:03 INFO  : Context for 'APU' is selected.
+10:39:04 INFO  : 'stop' command is executed.
+10:39:13 INFO  : 'ps7_init' command is executed.
+10:39:14 INFO  : 'ps7_post_config' command is executed.
+10:39:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:39:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:15 INFO  : 'profile -freq 100000 -scratchaddr 0x10000' command is executed.
+10:39:16 ERROR : 'dow C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf' is cancelled.
+10:39:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+loadhw C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+profile -freq 100000 -scratchaddr 0x10000
+dow C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf
+----------------End of Script----------------
+
+10:39:16 INFO  : Issued abort command to xsdb.
+10:39:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248650715" && level==0} -index 1' command is executed.
+10:39:26 INFO  : FPGA configured successfully with bitstream "C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/Cortex_A9_wrapper.bit"
+10:39:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248650715" && level==0} -index 1' command is executed.
+10:39:32 INFO  : 'fpga -state' command is executed.
+10:39:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:32 INFO  : Jtag cable 'Digilent Zed 210248650715' is selected.
+10:39:32 INFO  : 'jtag frequency' command is executed.
+10:39:32 INFO  : Sourcing of 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:39:32 INFO  : Context for 'APU' is selected.
+10:39:32 INFO  : Hardware design information is loaded from 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf'.
+10:39:33 INFO  : Context for 'APU' is selected.
+10:39:33 INFO  : 'stop' command is executed.
+10:39:40 INFO  : 'ps7_init' command is executed.
+10:39:40 INFO  : 'ps7_post_config' command is executed.
+10:39:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:39:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:41 INFO  : 'profile -freq 100000 -scratchaddr 0x10000' command is executed.
+10:39:41 INFO  : The application 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:39:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+loadhw C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/Cortex_A9_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+profile -freq 100000 -scratchaddr 0x10000
+dow C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/lab3_Custom_Ip.elf
+----------------End of Script----------------
+
+10:39:42 INFO  : Memory regions updated for context APU
+10:39:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:42 INFO  : 'set bpid [bpadd -addr &_exit]' command is executed.
+10:39:44 INFO  : 'con -block' command is executed.
+10:39:46 INFO  : 'profile -out C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/gmon.out' command is executed.
+10:39:46 INFO  : 'bpremove $bpid' command is executed.
+10:39:46 INFO  : 'con' command is executed.
+10:39:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248650715"} -index 0
+set bpid [bpadd -addr &_exit]
+con -block
+profile -out C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/SDK_workfolder/lab3_Custom_Ip/Debug/gmon.out
+bpremove $bpid
+con
+----------------End of Script----------------
+
+10:39:46 INFO  : Launch script is exported to file 'C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\SDK_workfolder\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab3_custom_ip.elf_on_local.tcl'
+10:58:08 INFO  : Disconnected from the channel tcfchan#1.

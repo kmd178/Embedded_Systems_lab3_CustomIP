@@ -18,7 +18,7 @@ int main (void)
    XGpio_SetDataDirection(&push, 1, 0xffffffff);
 
 
-   while (1)
+   //while (1)
    {
 	  psb_check = XGpio_DiscreteRead(&push, 1);
 	  xil_printf("Push Buttons Status %x\r\n", psb_check);

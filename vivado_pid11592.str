@@ -2,9 +2,9 @@
 
 Vivado v2016.4 (64-bit)
 SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
-Process ID: 9764
+Process ID: 11592
 
-Current time: 	4/25/17 9:40:16 AM EEST
+Current time: 	4/29/17 8:27:15 PM EEST
 Time zone: 	Eastern European Time (Europe/Athens)
 
 OS: Windows 10
@@ -34,39 +34,41 @@ RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
 Vivado preferences path: C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
 Vivado layouts directory: C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
 
-GUI allocated memory:	203 MB
+GUI allocated memory:	212 MB
 GUI max memory:		3,052 MB
-Engine allocated memory: 442 MB
+Engine allocated memory: 434 MB
 
 */
 
 // TclEventType: START_GUI
 // Tcl Message: start_gui 
 // TclEventType: PROJECT_OPEN_DIALOG
-// [GUI Memory]: 56 MB (+56540kb) [00:00:05]
-// [Engine Memory]: 386 MB (+253352kb) [00:00:05]
-// Opening Vivado Project: C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\CustomIP.xpr. Version: Vivado v2016.4 
+// [GUI Memory]: 55 MB (+54924kb) [00:00:07]
+// [Engine Memory]: 392 MB (+259451kb) [00:00:07]
+// TclEventType: PROJECT_OPEN_DIALOG
 // bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\CustomIP.xpr. Version: Vivado v2016.4 
 // TclEventType: DEBUG_PROBE_SET_CHANGE
 // Tcl Message: open_project C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.xpr 
+// [Engine Memory]: 432 MB (+21206kb) [00:00:09]
 // TclEventType: MSGMGR_MOVEMSG
 // TclEventType: FILE_SET_NEW
 // TclEventType: RUN_COMPLETED
 // TclEventType: RUN_CURRENT
-// [Engine Memory]: 445 MB (+41127kb) [00:00:09]
-// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 27 MB. Current time: 4/25/17 9:40:18 AM EEST
+// HMemoryUtils.trashcanNow. Engine heap size: 448 MB. GUI used memory: 27 MB. Current time: 4/29/17 8:27:18 PM EEST
 // TclEventType: IP_LOCK_CHANGE
-// [Engine Memory]: 491 MB (+25269kb) [00:00:14]
+// [Engine Memory]: 463 MB (+10618kb) [00:00:14]
 // TclEventType: IP_LOCK_CHANGE
 // TclEventType: PROJECT_NEW
-// [Engine Memory]: 564 MB (+50614kb) [00:00:18]
+// [Engine Memory]: 557 MB (+74052kb) [00:00:19]
+// [GUI Memory]: 61 MB (+3322kb) [00:00:23]
 // Tcl Message: open_project C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.xpr 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
 // Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
 // WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 866.039 ; gain = 198.941 
 // Project name: CustomIP; location: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP; part: xc7z020clg484-1
-// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 837.301 ; gain = 188.836 
 dismissDialog("Open Project"); // bt:g (cd:JFrame)
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: DG_UPDATE_GRAPH
@@ -74,4 +76,3 @@ dismissDialog("Open Project"); // bt:g (cd:JFrame)
 // TclEventType: DG_UPDATE_GRAPH
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_UPDATE_GRAPH
-// [Engine Memory]: 593 MB (+1215kb) [00:00:25]

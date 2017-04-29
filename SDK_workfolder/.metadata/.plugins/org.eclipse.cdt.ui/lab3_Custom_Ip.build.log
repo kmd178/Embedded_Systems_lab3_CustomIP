@@ -1,28 +1,8 @@
-09:55:56 **** Auto Build of configuration Debug for project lab3_Custom_Ip ****
+10:46:12 **** Auto Build of configuration Debug for project lab3_Custom_Ip ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/lab3_custom.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab3_custom.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab3_Custom_Ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab3_custom.d" -MT"src/lab3_custom.o" -o "src/lab3_custom.o" "../src/lab3_custom.c"
-'Finished building: ../src/lab3_custom.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab3_Custom_Ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: lab3_Custom_Ip.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab3_Custom_Ip_bsp/ps7_cortexa9_0/lib -o "lab3_Custom_Ip.elf"  ./src/lab3_custom.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: lab3_Custom_Ip.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size lab3_Custom_Ip.elf  |tee "lab3_Custom_Ip.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  26180	   1188	  22584	  49952	   c320	lab3_Custom_Ip.elf
-'Finished building: lab3_Custom_Ip.elf.size'
-' '
+make: Nothing to be done for `main-build'.
 
-09:55:57 Build Finished (took 1s.419ms)
+10:46:12 Build Finished (took 231ms)
 
