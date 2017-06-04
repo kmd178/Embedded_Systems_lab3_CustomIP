@@ -2,12 +2,16 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Tue May 02 10:06:36 2017
-# Process ID: 5188
+# Start of session at: Sat Apr 29 20:26:52 2017
+# Process ID: 11592
 # Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9308 C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\CustomIP.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10292 C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab3_CustomIP\CustomIP.xpr
 # Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/vivado.log
 # Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.xpr
+ipx::edit_ip_in_project -upgrade true -name led_ip_v1_0_v1_0_project -directory C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/CustomIP.tmp/led_ip_v1_0_v1_0_project c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab3_CustomIP/ip_repo/led_ip_1.0/component.xml
+current_project CustomIP
+current_project led_ip_v1_0_v1_0_project
+close_project
